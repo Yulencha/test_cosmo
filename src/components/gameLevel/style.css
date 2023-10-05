@@ -1,0 +1,80 @@
+.game-level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.game-level:nth-child(1) {
+  align-self: flex-start;
+}
+.game-level:nth-child(2) {
+  align-self: center;
+  transform: translateX(20%);
+}
+.game-level:nth-child(3) {
+  align-self: flex-end;
+  padding-right: clamp(10px, 3vw, 100px);
+  position: relative;
+}
+.game-level:nth-child(4) {
+  align-self: center;
+  transform: translateX(20%);
+}
+.game-level:nth-child(5) {
+  align-self: flex-start;
+  padding-left: clamp(10px, 8vw, 400px);
+}
+
+.game-level:nth-child(3)::before {
+  content: "";
+  background-image: url("../../img/blue_star.svg");
+  position: absolute;
+  width: 1558px;
+  height: 1294px;
+  left: -78vw;
+  top: -350px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.game-level__image:hover {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1.2) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1) rotate(15deg);
+  }
+  to {
+    transform: scale(1.2) rotate(0);
+  }
+}
+
+.game-level__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 303px;
+}
+
+.game-level__title {
+  color: var(--level-title-color);
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.game-level__description {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+  padding-bottom: 65px;
+}
+
+.game-level__img {
+}

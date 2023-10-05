@@ -1,0 +1,145 @@
+.forward-btn {
+  position: relative;
+  width: 418px;
+  height: 418px;
+}
+.forward-btn__outer-circle,
+.forward-btn__middle-circle,
+.forward-btn__inner-circle {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.forward-btn:hover .forward-btn__outer-circle,
+.forward-btn:hover .forward-btn__middle-circle,
+.forward-btn:hover .forward-btn__inner-circle {
+  animation: none;
+}
+
+.forward-btn:active .forward-btn__inner-circle {
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.forward-btn:active .forward-btn__title {
+  color: #ffe896;
+}
+
+.forward-btn:active .forward-btn__arrow path {
+  fill: #ffe896;
+}
+.forward-btn__outer-circle {
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 13, 104, 0.27);
+  animation: waves 4s linear 2s infinite;
+}
+
+.forward-btn__middle-circle {
+  width: 84.5%;
+  height: 84.5%;
+  background: rgba(36, 13, 104, 0.27);
+  animation: waves 4s linear infinite;
+}
+
+.forward-btn__inner-circle {
+  width: 67.7%;
+  height: 67.7%;
+  background: rgba(36, 13, 104, 0.27);
+  transition: box-shadow 0.5s;
+}
+
+.forward-btn__title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 105%;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: color 0.5s;
+}
+
+.forward-btn__arrow {
+  position: absolute;
+  top: 56.7%;
+  transform: translate(-50%, 0);
+  transition: fill 0.5s;
+}
+
+@keyframes waves {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* lg (>=992 и <=1199) */
+@media (max-width: 1199px) {
+  .forward-btn {
+    width: 300px;
+    height: 300px;
+  }
+  .forward-btn__title {
+    font-size: 38px;
+  }
+  .forward-btn__arrow {
+    height: 23px;
+  }
+}
+
+/* md (>=768 и <=991) */
+@media (max-width: 991px) {
+  .forward-btn {
+    width: 250px;
+    height: 250px;
+  }
+  .forward-btn__title {
+    font-size: 28px;
+  }
+  .forward-btn__arrow {
+    height: 18px;
+  }
+}
+
+/* sm (>=576 и <=767) */
+@media (max-width: 767px) {
+  .forward-btn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .forward-btn__title {
+    font-size: 18px;
+  }
+  .forward-btn__arrow {
+    height: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .forward-btn {
+    width: 100px;
+    height: 100px;
+  }
+  .forward-btn__title {
+    font-size: 12px;
+  }
+  .forward-btn__arrow {
+    height: 10px;
+  }
+}
