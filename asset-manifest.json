@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test_cosmo/static/css/main.181edfa5.css",
-    "main.js": "/test_cosmo/static/js/main.a6b37739.js",
+    "main.css": "/test_cosmo/static/css/main.571ef9ce.css",
+    "main.js": "/test_cosmo/static/js/main.9308b02a.js",
     "static/media/03.svg": "/test_cosmo/static/media/03.070c60ffed45d71eff705e3866bff861.svg",
     "static/media/02.svg": "/test_cosmo/static/media/02.41372c23073950630e5a0c0ae87af677.svg",
     "static/media/05.svg": "/test_cosmo/static/media/05.ecf701f1b5aa341cb5006bc86f36fb69.svg",
@@ -10,11 +10,11 @@
     "static/media/header-background.svg": "/test_cosmo/static/media/header-background.c0671b076901fb878d32ce0693987872.svg",
     "static/media/background.svg": "/test_cosmo/static/media/background.1a697cdc1f7e1b1d47286c8a70b2f6fe.svg",
     "index.html": "/test_cosmo/index.html",
-    "main.181edfa5.css.map": "/test_cosmo/static/css/main.181edfa5.css.map",
-    "main.a6b37739.js.map": "/test_cosmo/static/js/main.a6b37739.js.map"
+    "main.571ef9ce.css.map": "/test_cosmo/static/css/main.571ef9ce.css.map",
+    "main.9308b02a.js.map": "/test_cosmo/static/js/main.9308b02a.js.map"
   },
   "entrypoints": [
-    "static/css/main.181edfa5.css",
-    "static/js/main.a6b37739.js"
+    "static/css/main.571ef9ce.css",
+    "static/js/main.9308b02a.js"
   ]
 }
