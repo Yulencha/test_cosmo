@@ -9,6 +9,9 @@ import BurgerButton from "../burgerButton/BurgerButton";
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
   const menuRef = useRef(null);
+  const closeMenu = () => {
+    setMenuActive(false);
+  };
 
   useClickOutside(menuRef, () => {
     if (menuActive) {
@@ -37,7 +40,7 @@ const Header = () => {
         isActive={menuActive}
         onClick={() => setMenuActive(!menuActive)}
       />
-      <Navbar isActive={menuActive} ref={menuRef} />
+      <Navbar isActive={menuActive} ref={menuRef} onClose={closeMenu} />
 
       <div className="header__title">Cosmo Script</div>
       <div className="header__subtitle">
@@ -50,10 +53,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// function handleNav() {
-//   setMenuActive(!menuActive);
-//   if (menuActive) {
-//     document.body.style.overflow = "hidden";
-//   }
-// }

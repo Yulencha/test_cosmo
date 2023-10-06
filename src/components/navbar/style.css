@@ -20,6 +20,9 @@
   font-weight: 700;
   line-height: normal;
 }
+.nav-list__link.active {
+  color: var(--level-title-color);
+}
 
 @media (max-width: 767px) {
   .nav {
