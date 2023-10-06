@@ -7,19 +7,15 @@
   --text-color: #fff;
   --level-title-color: #7bd0ff;
 }
-/* html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-} */
 
 body {
   background: var(--background-color);
   font-family: "Nunito", sans-serif;
   /* font-family: 'Racing Sans One', cursive; */
   position: relative;
-  /* height: 100vh; */
+}
+body.menu-active {
+  overflow: hidden;
 }
 
 .page {
@@ -61,6 +57,16 @@ body {
   padding: 0 50px 135px;
 }
 
+.page__tariffs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 30px;
+  width: 100%;
+  padding: 0 50px 135px;
+}
+
 @media (max-width: 1199px) {
   .page__title {
     font-size: 40px;
@@ -68,6 +74,11 @@ body {
 }
 
 @media (max-width: 991px) {
+  .page__tariffs {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -75,6 +86,9 @@ body {
     font-size: 30px;
   }
   .page__game-levels {
+    padding: 0 20px 85px;
+  }
+  .page__tariffs {
     padding: 0 20px 85px;
   }
 }
@@ -85,6 +99,9 @@ body {
   }
   .page__game-levels {
     gap: 50px;
+    padding: 0 10px 40px;
+  }
+  .page__tariffs {
     padding: 0 10px 40px;
   }
 }

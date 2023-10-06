@@ -10,7 +10,7 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
   transition: background 0.3s;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .button_red {

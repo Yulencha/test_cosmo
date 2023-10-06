@@ -1,7 +1,7 @@
 import React from "react";
 import GameLevel from "../components/gameLevel/GameLevel";
 import { gameLevelList } from "../helpers/GameLevelList";
-import pageBackground from "../img/background2.svg";
+import pageBackground from "../img/background.svg";
 
 const Home = () => {
   return (

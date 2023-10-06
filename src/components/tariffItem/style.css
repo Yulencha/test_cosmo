@@ -1,0 +1,43 @@
+.tariff-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* gap: 60px; */
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.tariff-item__title {
+  color: var(--level-title-color);
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.tariff-item__description {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .tariff-item__title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tariff-item__title {
+    font-size: 20px;
+  }
+}

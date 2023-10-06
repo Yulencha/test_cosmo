@@ -1,8 +1,6 @@
 import "./styles/main.css";
 
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-
 import Home from "./pages/Home";
 import Prices from "./pages/Prices";
 import Header from "./components/header/Header";

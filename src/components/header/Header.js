@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import { React, useRef, useState, useEffect } from "react";
 import "./style.css";
 import Navbar from "../navbar/Navbar";
 import headerBackground from "./header-background.svg";
@@ -15,6 +15,18 @@ const Header = () => {
       setTimeout(() => setMenuActive(false), 200);
     }
   });
+
+  useEffect(() => {
+    if (menuActive) {
+      document.body.classList.add("menu-active");
+    } else {
+      document.body.classList.remove("menu-active");
+    }
+
+    return () => {
+      document.body.classList.remove("menu-active");
+    };
+  }, [menuActive]);
 
   return (
     <header className="header">
