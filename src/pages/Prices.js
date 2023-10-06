@@ -3,6 +3,8 @@ import React from "react";
 
 const Prices = () => {
   async function fetchTariff() {
+    axios({});
+
     const response = await axios.get(
       "https://munchkin.cosmoscript.ru/api/get_tariff/"
     );
