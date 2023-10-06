@@ -34,7 +34,7 @@ body.menu-active {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: -3;
 }
 
 .page__title {
@@ -102,5 +102,48 @@ body.menu-active {
   }
   .page__tariffs {
     padding: 0 10px 40px;
+  }
+}
+
+.shooting-stars {
+  z-index: -1;
+  width: 12px;
+  height: 85px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+.shooting-stars_1 {
+  top: 0;
+  left: 50%;
+  animation: animShootingStar 10s linear infinite 5s;
+}
+.shooting-stars_2 {
+  top: 0;
+  left: 0;
+  animation: animShootingStar 6s linear infinite 20s;
+}
+.shooting-stars_3 {
+  top: 50%;
+  left: 0;
+  animation: animShootingStar 8s linear infinite;
+}
+
+@keyframes animShootingStar {
+  from {
+    transform: translateY(0px) translateX(0px) rotate(135deg);
+    opacity: 1;
+    height: 5px;
+  }
+  to {
+    transform: translateY(1920px) translateX(1920px) rotate(135deg);
+    opacity: 1;
+    height: 800px;
   }
 }

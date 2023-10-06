@@ -8,6 +8,9 @@ const Home = () => {
     <div className="page">
       <div className="page__background">
         <img src={pageBackground} alt="" />
+        <div class="shooting-stars shooting-stars_1"></div>
+        <div class="shooting-stars shooting-stars_2"></div>
+        <div class="shooting-stars shooting-stars_3"></div>
       </div>
       <div className="page__title">Описание игры</div>
       <div className="page__game-levels">
