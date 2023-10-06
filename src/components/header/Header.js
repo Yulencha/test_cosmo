@@ -5,6 +5,9 @@ import headerBackground from "./header-background.svg";
 import ForwardBtn from "../forwardBtn/ForwardBtn";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import BurgerButton from "../burgerButton/BurgerButton";
+import stars1 from "./stars_group_1.svg";
+import stars2 from "./stars_group_2.svg";
+import stars3 from "./stars_group_3.svg";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -35,6 +38,9 @@ const Header = () => {
     <header className="header">
       <div className="header__background">
         <img src={headerBackground} alt="" />
+        <img src={stars1} alt="" />
+        <img src={stars2} alt="" />
+        <img src={stars3} alt="" />
       </div>
       <BurgerButton
         isActive={menuActive}
