@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import TariffItem from "../components/tariffItem/TariffItem";
+import PageBackground from "../components/pageBackgroung/PageBackground";
 
 const Prices = () => {
   const [tariffs, setTariffs] = useState([]);
@@ -40,6 +41,7 @@ const Prices = () => {
 
   return (
     <div className="page">
+      <PageBackground galaxy={"width"} />
       <div className="page__title">Тарифы</div>
       <div className="page__tariffs">
         {tariffs.map((tariff, index) => (
