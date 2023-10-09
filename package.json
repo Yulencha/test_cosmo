@@ -2,7 +2,7 @@
   "name": "5_test_cosmo_2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yulencha.github.io/test_cosmo",
+  "homepage": "https://yulencha.github.io/test_urban-doodle/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
